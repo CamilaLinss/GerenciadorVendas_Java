@@ -200,7 +200,7 @@ ResultSet Busca_Funcionario(String tabela, String campo1,  String campo2, String
 		//executeQuery usado apenas para SELECT
 		this.resultado = this.consulta.executeQuery(query);
 		
-		//this.resultado.next();
+		this.resultado.next();
 		
 	}
 		catch(Exception fa) {
