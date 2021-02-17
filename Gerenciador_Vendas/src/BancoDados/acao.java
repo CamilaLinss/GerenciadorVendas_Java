@@ -11,12 +11,13 @@ public class acao {
 
 
 		BancoDados bd = new BancoDados();
+		teste tes = new teste();
 		
+		//bd.conectar();
+		tes.conectar();
 		
-		bd.conectar();
-		
-		ResultSet mostra = bd.Busca_Funcionario(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
-				Tabelas.senha, Tabelas.ADM, "995", "", "", "", "");
+		ResultSet mostra = tes.Busca_diferente(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
+				Tabelas.senha, Tabelas.ADM, "994", "", "", "", "");
 	
 		
 		try{
@@ -38,7 +39,8 @@ public class acao {
 	//JOptionPane.showMessageDialog(null,	bd.Busca_Funcionario(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
 			//Tabelas.senha, Tabelas.ADM, "995", "", "", "", ""));
 		
-		bd.desconectar();
+		
+		tes.desconectar();
 		//JOptionPane.showMessageDialog(null,Tabelas.funcionario);
 		
 		
