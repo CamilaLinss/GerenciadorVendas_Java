@@ -107,7 +107,7 @@ catch (NullPointerException | SQLException |ClassNotFoundException  fa) {
 	JOptionPane.showMessageDialog(null, "ERRO: " + fa);	
 }
 
-
+this.desconectar();
 
      }
 

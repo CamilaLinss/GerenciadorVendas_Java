@@ -11,9 +11,7 @@ public final class Tabelas {
 	public static String CPF = "CPF";
 	public static String senha = "senha";
 	public static String ADM = "ADM";
-	
-	
-	
+
 	
 	
 	
