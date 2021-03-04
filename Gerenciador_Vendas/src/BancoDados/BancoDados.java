@@ -107,6 +107,8 @@ catch (NullPointerException | SQLException |ClassNotFoundException  fa) {
 	JOptionPane.showMessageDialog(null, "ERRO: " + fa);	
 }
 
+
+
      }
 
 
@@ -117,7 +119,8 @@ public boolean estaConectado() {
 	//Quando não é nem true ou false, ele é null
 //No momento ele é = null, a if vai perguntar se ele é != de null, se a conexão não me trouxe nada e assim continuar nula, então ela ainda é = null, então a questão se ela é != null é falsa, se for realmente != null então ela é verdadeira
 	if(this.conexao != null) {
-		return true; }
+		return true; 
+		}
 	else {
 		return false;
 	}
