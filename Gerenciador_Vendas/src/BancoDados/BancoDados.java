@@ -3,6 +3,7 @@ package BancoDados;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 
 import javax.swing.JOptionPane;
@@ -102,10 +103,9 @@ try {
 	this.consulta = this.conexao.createStatement();
 }
 //Pegar uma exceção (erro) e colocar na variavel "fa"
-catch (Exception fa) {
+catch (NullPointerException | SQLException |ClassNotFoundException  fa) {
 	JOptionPane.showMessageDialog(null, "ERRO: " + fa);	
 }
-
 
      }
 
@@ -169,6 +169,7 @@ public void desconectar() {
 	
 	
 }
+
 
 
 

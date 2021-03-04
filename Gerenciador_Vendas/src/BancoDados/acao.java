@@ -1,5 +1,6 @@
 package BancoDados;
 
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -11,12 +12,12 @@ public class acao {
 
 
 		BancoDados bd = new BancoDados();
-		teste tes = new teste();
+		Funcionario_Venda tes = new Funcionario_Venda();
 		
 		//bd.conectar();
 		tes.conectar();
 		
-		ResultSet mostra = tes.Busca_diferente(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
+		ResultSet mostra = tes.Busca_Func_Venda(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
 				Tabelas.senha, Tabelas.ADM, "994", "", "", "", "");
 	
 		
@@ -32,6 +33,7 @@ public class acao {
 		 
 		
 		
+
 		
 	//	System.out.println(bd.Busca_Funcionario(Tabelas.funcionario, Tabelas.ID_func, Tabelas.nome_func, Tabelas.CPF,
 				//Tabelas.senha, Tabelas.ADM, "995", "", "", "", ""));
